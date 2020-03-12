@@ -39,6 +39,12 @@ public class DefaultFlagEncoderFactory implements FlagEncoderFactory {
         if (name.equals(BIKE))
             return new BikeFlagEncoder(configuration);
 
+        if (name.equals(MYBIKE))
+            return new MyBikeFlagEncoder(configuration);
+
+        if (name.equals(ALLBIKE))
+            return new AllBikeFlagEncoder(configuration);
+
         if (name.equals(BIKE2))
             return new Bike2WeightFlagEncoder(configuration);
 
